@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MSC Basic 10 Day Class</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #BB2233;
+      --secondary: #FA8603;
+      --light: #FAE3CF;
+      --dark: #0A0F24;
+    }
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+    }
+    .navbar, .footer {
+      background-color: var(--dark);
+    }
+    .navbar-brand, .navbar-nav .nav-link, .footer p {
+      color: var(--light) !important;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+    .btn-secondary {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+    }
+    .hero {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 100px 0;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--secondary);
+    }
+    .carousel-item img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      object-position: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .carousel-caption-custom {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    /* Custom Carousel Arrows */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #FA8603;
+      border-radius: 50%;
+      background-size: 50% 50%;
+      width: 50px;
+      height: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      background-color: #e67500; /* warna saat hover */
+    }
+    .coach-img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .coach-card {
+      border: none;
+      background-color: var(--light);
+    }
+    .coach-card .card-body {
+      color: var(--dark);
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 60px 0; }
+      .carousel-item img { max-height: 300px; }
+      .coach-img { width: 250px; height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MSC Body Transformation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#coach">Coach</a></li>
+        <li class="nav-item"><a class="btn btn-secondary ms-2" href="#daftar">Daftar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Jadilah Versi Terbaikmu dalam 10 Hari!</h1>
+    <p class="lead">Program praktis &amp; terbukti efektif untuk membakar lemak, membentuk otot, dan meningkatkan energi.</p>
+    <a href="#daftar" class="btn btn-lg btn-light text-dark">Mulai Sekarang</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 text-center">
+        <div class="feature-icon mb-3">🔥</div>
+        <h5 class="fw-semibold">Membakar Lemak</h5>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center">
+        <div class="feature-icon mb-3">💪</div>
+        <h5 class="fw-semibold">Meningkatkan Otot</h5>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center">
+        <div class="feature-icon mb-3">🥗</div>
+        <h5 class="fw-semibold">Pola Makan Sehat</h5>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center">
+        <div class="feature-icon mb-3">🤝</div>
+        <h5 class="fw-semibold">Komunitas Supportive</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel Section -->
+<section id="testimoni" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Kisah Sukses Customer</h2>
+    <div id="successCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20 (1).jpeg" class="d-block mx-auto" >
+        </div>
+        <div class="carousel-item">
+          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20.jpeg" class="d-block mx-auto" >
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="image3.jpg" class="d-block mx-auto" alt="After">
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#successCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#successCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Coach Section -->
+<section id="coach" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Meet Your Coach</h2>
+    <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <img src="asset/WhatsApp Image 2025-05-04 at 19.18.09.jpeg" class="coach-img mb-4" alt="Coach Liu">
+        <h4>Coach Liu</h4>
+        <p>📞 085240161736</p>
+        <div class="d-flex justify-content-center gap-4 mt-3">
+          <a href="https://www.instagram.com/cuandajulia49?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://www.facebook.com/julia.cuanda"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://wa.link/i80fwx"><i class="bi bi-whatsapp fs-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section id="daftar" class="bg-secondary text-center text-light py-5">
+  <div class="container">
+    <h3>Mau Turun 6 kg dan tetap strong di usia 49 tahun?</h3>
+    <p>Kirim "SIAP TRANSFORMASI" ke Coach Liu via WhatsApp sekarang!</p>
+    <a href="https://wa.link/i80fwx" class="btn btn-lg btn-light text-dark">Chat Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center py-4">
+  <div class="container">
+    <p>&copy; 2025 Coach Liu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
