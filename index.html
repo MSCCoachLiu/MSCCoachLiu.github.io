@@ -92,6 +92,19 @@
       .carousel-item img { max-height: 300px; }
       .coach-img { width: 250px; height: 250px; }
     }
+
+    /* Gallery styling */
+    .food-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 60px 0; }
+      .carousel-item img { max-height: 300px; }
+      .coach-img { width: 250px; height: 250px; }
+    }
   </style>
 </head>
 <body>
@@ -146,6 +159,47 @@
     </div>
   </div>
 </section>
+
+  <!-- Custom Food Gallery Segment -->
+  <section id="food-gallery" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Galeri Makanan Sehat</h2>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Contoh Item: ganti src dan alt -->
+        <div class="col">
+          <div class="text-center">
+            <img src="asset/Ayam Lada hitam.jpeg" alt="Ayam Lada Hitam" class="food-img mb-2">
+            <h5 class="fw-semibold">Ayam Lada Hitam</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="asset/Chinese style steam dori.jpeg" alt="Steam Dori" class="food-img mb-2">
+            <h5 class="fw-semibold">Steam Dori</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="asset/Grilled Dori korean style.jpeg" alt="Grilled Dori" class="food-img mb-2">
+            <h5 class="fw-semibold">Grilled Dori</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="asset/oseng telur.jpeg" alt="Oseng Telur" class="food-img mb-2">
+            <h5 class="fw-semibold">Oseng Telur</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="asset/Paha ayam bakar.jpeg" alt="Paha Ayam Bakar" class="food-img mb-2">
+            <h5 class="fw-semibold">Paha Ayam Bakar</h5>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center mb-4">Mau Resepnya? Chat coach sekarang!</h2>
+    </div>
+  </section>
 
 
 <!-- Carousel Section -->
