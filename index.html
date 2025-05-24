@@ -60,7 +60,6 @@
       display: inline-block;
       margin-top: 10px;
     }
-    /* Custom Carousel Arrows */
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-color: #FA8603;
@@ -72,7 +71,7 @@
     }
     .carousel-control-prev-icon:hover,
     .carousel-control-next-icon:hover {
-      background-color: #e67500; /* warna saat hover */
+      background-color: #e67500;
     }
     .coach-img {
       width: 400px;
@@ -92,18 +91,11 @@
       .carousel-item img { max-height: 300px; }
       .coach-img { width: 250px; height: 250px; }
     }
-
-    /* Gallery styling */
     .food-img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
-    }
-    @media (max-width: 768px) {
-      .hero { padding: 60px 0; }
-      .carousel-item img { max-height: 300px; }
-      .coach-img { width: 250px; height: 250px; }
     }
   </style>
 </head>
@@ -160,47 +152,68 @@
   </div>
 </section>
 
-  <!-- Custom Food Gallery Segment -->
-  <section id="food-gallery" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="text-center mb-4">Galeri Makanan Sehat</h2>
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <!-- Contoh Item: ganti src dan alt -->
-        <div class="col">
-          <div class="text-center">
-            <img src="asset/Ayam Lada hitam.jpeg" alt="Ayam Lada Hitam" class="food-img mb-2">
-            <h5 class="fw-semibold">Ayam Lada Hitam</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <img src="asset/Chinese style steam dori.jpeg" alt="Steam Dori" class="food-img mb-2">
-            <h5 class="fw-semibold">Steam Dori</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <img src="asset/Grilled Dori korean style.jpeg" alt="Grilled Dori" class="food-img mb-2">
-            <h5 class="fw-semibold">Grilled Dori</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <img src="asset/oseng telur.jpeg" alt="Oseng Telur" class="food-img mb-2">
-            <h5 class="fw-semibold">Oseng Telur</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <img src="asset/Paha ayam bakar.jpeg" alt="Paha Ayam Bakar" class="food-img mb-2">
-            <h5 class="fw-semibold">Paha Ayam Bakar</h5>
-          </div>
+<!-- Food Gallery -->
+<section id="food-gallery" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Galeri Makanan Sehat</h2>
+    <div id="food-gallery-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <!-- Item 1 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Ayam Lada hitam.jpeg" alt="Ayam Lada Hitam" class="food-img mb-2">
+          <h5 class="fw-semibold">Ayam Lada Hitam</h5>
         </div>
       </div>
-      <h2 class="text-center mb-4">Mau Resepnya? Chat coach sekarang!</h2>
+      <!-- Item 2 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Chinese style steam dori.jpeg" alt="Steam Dori" class="food-img mb-2">
+          <h5 class="fw-semibold">Steam Dori</h5>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Grilled Dori korean style.jpeg" alt="Grilled Dori" class="food-img mb-2">
+          <h5 class="fw-semibold">Grilled Dori</h5>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/oseng telur.jpeg" alt="Oseng Telur" class="food-img mb-2">
+          <h5 class="fw-semibold">Oseng Telur</h5>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Paha ayam bakar.jpeg" alt="Paha Ayam Bakar" class="food-img mb-2">
+          <h5 class="fw-semibold">Paha Ayam Bakar</h5>
+        </div>
+      </div>
+      <!-- Item 6 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Terong tumis cabe hijau.jpeg" alt="Terong Tumis Cabe Hijau" class="food-img mb-2">
+          <h5 class="fw-semibold">Terong Tumis Cabe Hijau</h5>
+        </div>
+      </div>
+      <!-- Item 7 -->
+      <div class="col">
+        <div class="text-center">
+          <img src="asset/Tuna salad with corn.jpeg" alt="Tuna Salad with Corn" class="food-img mb-2">
+          <h5 class="fw-semibold">Tuna Salad with Corn</h5>
+        </div>
+      </div>
     </div>
-  </section>
-
+    <!-- Pagination -->
+    <nav aria-label="Food gallery pagination">
+      <ul class="pagination justify-content-center mt-4"></ul>
+    </nav>
+    <h2 class="text-center mb-4">Mau Resepnya? Chat coach sekarang!</h2>
+  </div>
+</section>
 
 <!-- Carousel Section -->
 <section id="testimoni" class="py-5 bg-light">
@@ -209,10 +222,10 @@
     <div id="successCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner text-center">
         <div class="carousel-item active">
-          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20 (1).jpeg" class="d-block mx-auto" >
+          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20 (1).jpeg" class="d-block mx-auto">
         </div>
         <div class="carousel-item">
-          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20.jpeg" class="d-block mx-auto" >
+          <img src="asset/WhatsApp Image 2025-05-04 at 17.59.20.jpeg" class="d-block mx-auto">
         </div>
         <div class="carousel-item">
           <img src="asset/WhatsApp Image 2025-05-05 at 02.46.51.jpeg" class="d-block mx-auto" alt="After">
@@ -271,5 +284,45 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Pagination Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const gallery = document.getElementById("food-gallery-list");
+  const items = gallery.querySelectorAll(".col");
+  const perPage = 6;
+  const pageCount = Math.ceil(items.length / perPage);
+  const paginationUL = document.querySelector("#food-gallery .pagination");
+
+  function showPage(page) {
+    items.forEach((item, i) => {
+      item.style.display = (i >= (page-1)*perPage && i < page*perPage) ? "" : "none";
+    });
+  }
+
+  function setupPagination() {
+    paginationUL.innerHTML = "";
+    for (let i = 1; i <= pageCount; i++) {
+      const li = document.createElement("li");
+      li.className = "page-item" + (i === 1 ? " active" : "");
+      const a = document.createElement("a");
+      a.className = "page-link";
+      a.href = "#";
+      a.textContent = i;
+      a.addEventListener("click", function(e) {
+        e.preventDefault();
+        showPage(i);
+        const current = paginationUL.querySelector(".active");
+        if (current) current.classList.remove("active");
+        li.classList.add("active");
+      });
+      li.appendChild(a);
+      paginationUL.appendChild(li);
+    }
+  }
+
+  showPage(1);
+  if (pageCount > 1) setupPagination();
+});
+</script>
 </body>
 </html>
